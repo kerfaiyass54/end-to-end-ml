@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
-from sklearn.metrics import mean_squared_error, r2_score
+from sklearn.metrics import mean_absolute_error
 import dash
 from dash import html, dcc, Input, Output, State
 
@@ -22,6 +22,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Model initialization
 model = LinearRegression()
+
+predicted_home_prices = melbourne_model.predict(X)
+print("The mean absolute error of the predictions is: " + str(mean_absolute_error(y, predicted_home_prices)))
 
 # Training the model
 model.fit(X_train, y_train)
