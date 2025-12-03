@@ -32,7 +32,7 @@ app = dash.Dash(__name__)
 # Define the layout of the app
 app.layout = html.Div([
     html.Div([
-        html.H1("Real Estate Price Prediction", style={'text-align': 'center'}),
+        html.H1("Real Estate Price Prediction", style={'text-align': 'center', 'font-weight': '600'}),
         
         html.Div([
             dcc.Input(id='distance_to_mrt', type='number', placeholder='Distance to MRT Station (meters)',
@@ -44,12 +44,16 @@ app.layout = html.Div([
             dcc.Input(id='longitude', type='number', placeholder='Longitude',
                       style={'margin': '10px', 'padding': '10px'}),
             html.Button('Predict Price', id='predict_button', n_clicks=0,
-                        style={'margin': '10px', 'padding': '10px', 'background-color': '#007BFF', 'color': 'white'}),
+                        style={'margin': '10px', 'padding': '10px', 'background-color': '#007BFF', 'color': 'white', 'border-radius': '8px'}),
         ], style={'text-align': 'center'}),
         
-        html.Div(id='prediction_output', style={'text-align': 'center', 'font-size': '20px', 'margin-top': '20px'})
-    ], style={'width': '50%', 'margin': '0 auto', 'border': '2px solid #007BFF', 'padding': '20px', 'border-radius': '10px'})
+        html.Div(id='prediction_output', className='animated', 
+                 style={'text-align': 'center', 'font-size': '20px', 'margin-top': '20px'})
+    ], className='animated', 
+       style={'width': '50%', 'margin': '50px auto', 'border': '2px solid #007BFF', 
+              'padding': '20px', 'border-radius': '10px', 'background-color': 'white'})
 ])
+
 
 # Define callback to update output
 @app.callback(
