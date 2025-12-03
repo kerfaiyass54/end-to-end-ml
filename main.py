@@ -23,7 +23,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 # Model initialization
 model = LinearRegression()
 
-predicted_home_prices = melbourne_model.predict(X)
+predicted_home_prices = model.predict(X)
 print("The mean absolute error of the predictions is: " + str(mean_absolute_error(y, predicted_home_prices)))
 
 # Training the model
