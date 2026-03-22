@@ -24,10 +24,15 @@ The model currently uses **linear regression** but is easily extensible to more 
 ## ✨ Key Features
 
 ✅ **Interactive Web Dashboard** - Predict prices with just a few inputs
+
 ✅ **End-to-End Pipeline** - From data loading to model serving
+
 ✅ **Docker Support** - Run the app in containers with one command
+
 ✅ **Modular Design** - Easy to extend with new models or features
+
 ✅ **Visual Feedback** - Immediate price predictions with confidence metrics
+
 ✅ **Open Source** - Free to use, modify, and contribute
 
 ---
