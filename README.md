@@ -70,7 +70,7 @@ The model currently uses **linear regression** but is easily extensible to more 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/end-to-end-ml.git
+git clone https://github.com/kerfaiyass54/end-to-end-ml.git
 cd end-to-end-ml
 
 # Create and activate virtual environment
@@ -98,7 +98,7 @@ Access the application at: [http://localhost:8050](http://localhost:8050)
 
 ```bash
 # Clone and set up for development
-git clone https://github.com/yourusername/end-to-end-ml.git
+git clone https://github.com/kerfaiyass54/end-to-end-ml.git
 cd end-to-end-ml
 
 # Create virtual environment
@@ -145,8 +145,8 @@ PORT = int(os.getenv('PORT', 8050))
 
 **We welcome all contributions!** Here's how you can help:
 
-1. **Report Issues**: Found a bug? [Open an issue](https://github.com/yourusername/end-to-end-ml/issues/new)
-2. **Suggest Features**: Have an idea? [Create a feature request](https://github.com/yourusername/end-to-end-ml/issues/new)
+1. **Report Issues**: Found a bug? [Open an issue](https://github.com/kerfaiyass54/end-to-end-ml/issues/new)
+2. **Suggest Features**: Have an idea? [Create a feature request](https://github.com/kerfaiyass54/end-to-end-ml/issues/new)
 3. **Submit Pull Requests**: Fix bugs or add features
 
 ### Development Workflow
